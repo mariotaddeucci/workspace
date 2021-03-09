@@ -1,0 +1,32 @@
+{
+  "name": "",
+  "short_name": "",
+  "description": "",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": { "128": "img/icon.png" },
+  "default_locale": "en",
+  "permissions": [
+    "webview",
+    "notifications",
+    "videoCapture",
+    "audioCapture",
+    "fileSystem",
+    "storage",
+    "alarms",
+    "clipboardWrite"
+  ],
+  "webview": {
+    "partitions": [
+      {
+        "name": "services",
+        "accessible_resources": ["*"]
+      }
+    ]
+  }
+}
